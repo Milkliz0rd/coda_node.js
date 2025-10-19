@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npx prisma migrate deploy",
+    "postinstall": "npx prisma generate",
     "dev": "node app.js",
-    "start": "node app.js",
+    "start": "sh -c 'export DATABASE_URL=$MYSQL_ADDON_URI && npx prisma migrate deploy && node app.js'",
     "test": "vitest"
   },
   "author": "",
