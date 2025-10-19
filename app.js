@@ -1,3 +1,5 @@
+process.env.DATABASE_URL = process.env.MYSQL_ADDON_URI;
+
 // on Importe le framework
 import Fastify from "fastify";
 import { registerPostRoutes } from "./controllers/post.js";
