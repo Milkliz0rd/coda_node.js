@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon app.js",
+    "postinstall": "npx prisma migrate deploy",
+    "dev": "node app.js",
+    "start": "node app.js",
     "test": "vitest"
   },
   "author": "",
