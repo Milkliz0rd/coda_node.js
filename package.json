@@ -1,0 +1,32 @@
+{
+  "name": "api-sciatique",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "vitest"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@fastify/auth": "^5.0.3",
+    "@fastify/cors": "^11.1.0",
+    "@fastify/swagger": "^9.5.2",
+    "@fastify/swagger-ui": "^5.2.3",
+    "@prisma/client": "^6.17.1",
+    "ajv-formats": "^3.0.1",
+    "bcrypt": "^6.0.0",
+    "fastify": "^5.6.1",
+    "jsonwebtoken": "^9.0.2",
+    "pino-pretty": "^13.1.2"
+  },
+  "devDependencies": {
+    "got": "^14.6.0",
+    "nodemon": "^3.1.10",
+    "nswag": "^14.6.1",
+    "prisma": "^6.17.1",
+    "vitest": "^3.2.4"
+  }
+}
